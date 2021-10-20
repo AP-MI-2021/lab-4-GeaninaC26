@@ -93,6 +93,11 @@ def split(elem):
     return list(elem)
 
 def get_word(elem):
+    """
+    Construieste un string format din cuvintele ce descriu caracterele din elem
+    :param elem: float
+    :return: string-ul contrui
+    """
     result = []
     str_elem=str(elem)
     caracter=split(str_elem)
