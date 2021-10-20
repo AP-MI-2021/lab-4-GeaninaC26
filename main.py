@@ -55,6 +55,8 @@ def get_num_in_interval(lst, start, end):
 
 def test_get_num_in_interval():
     assert get_num_in_interval([12.3, 7.5, 4.3, 8.9], 3, 8) == [7.5, 4.3]
+    assert get_num_in_interval([],2,5) == []
+    assert get_num_in_interval([2.5, 3.7, 56],1,2) == []
 
 
 def show_num_in_intervals(lst):
