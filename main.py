@@ -2,7 +2,7 @@ def show_menu():
     print("1.Citire lista de float-uri")
     print("2.Afisarea partii intregi a tuturor numerelor din lista.")
     print("3.Afisarea numerelor din lista ce apartin unui interval dat de utilizator")
-    print("4.")
+    print("4.Afișarea tuturor numerelor a căror parte întreagă este divizor al părții fracționare")
 
 
 def read_list_floats():
@@ -93,34 +93,37 @@ def split(elem):
     return list(elem)
 
 def get_word(elem):
-    result = []
+
     str_elem=str(elem)
     caracter=split(str_elem)
-    for i in range(0,len(caracter)):
+    result = caracter[0]
+    for i in range(1,len(caracter)):
         if caracter[i] == '1':
-            result.append('unu')
+            result = result + 'unu'
         if caracter[i] == '2':
-            result.append('doi')
+            result = result = 'doi'
         if caracter[i] == '3':
-            result.append('trei')
+            result = result = 'trei'
         if caracter[i] == '4':
-            result.append('patru')
+            result = result = 'patru'
         if caracter[i] == '5':
-            result.append('cinci')
+            result = result = 'cinci'
         if caracter[i] == '6':
-            result.append('sase')
+            result = result = 'sase'
         if caracter[i] == '7':
-            result.append('sapte')
+            result = result = 'sapte'
         if caracter[i] == '8':
-            result.append('opt')
+            result = result = 'opt'
         if caracter[i] == '9':
-            result.append('noua')
+            result = result = 'noua'
         if caracter[i] == '0':
-            result.append('zero')
+            result = result = 'zero'
         if caracter[i] == '.':
-            result.append('virgula')
+            result = result = 'virgula'
         if caracter[i] == '-':
-            result.append('minus')
+            result = result + 'minus'
+        print(result)
+
     return result
 
 
