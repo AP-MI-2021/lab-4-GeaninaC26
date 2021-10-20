@@ -143,8 +143,11 @@ def get_floats_into_words(lst):
 
 
 def show_floats_into_words(lst):
-    print(f'Lista: {get_floats_into_words(lst)}')
+    print(f'Lista prelucrata: {get_floats_into_words(lst)}')
 
+
+def test_get_floats_into_words():
+    assert get_floats_into_words([1.5, -3.3, 8, 9.8, 3.2, 14.52]) == ['unuvirgulacinci', 'minustreivirgulatrei', 'opt', 'nouavirgulaopt', 'treivirguladoi', 'unupatruvirgulacincidoi']
 
 
 def main():
@@ -172,4 +175,5 @@ if __name__=='__main__':
     test_get_integers()
     test_get_num_in_interval()
     test_integers_div_frac()
+    test_get_floats_into_words()
     main()
