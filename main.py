@@ -2,7 +2,9 @@ def show_menu():
     print("1.Citire lista de float-uri")
     print("2.Afisarea partii intregi a tuturor numerelor din lista.")
     print("3.Afisarea numerelor din lista ce apartin unui interval dat de utilizator")
-    print("4.")
+    print("4.Afișarea tuturor numerelor a căror parte întreagă este divizor al părții fracționare")
+    print("5.Prelucrare lista.")
+    print("x.Exit")
 
 
 def read_list_floats():
